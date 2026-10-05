@@ -40,37 +40,51 @@ header p {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 20px;
+  gap: 25px;
   padding: 45px 20px;
-  max-width: 1400px;
+  max-width: 1200px;
   margin: auto;
 }
 
+
+/* Timeline cards */
+
 .timeline-card {
   background-color: white;
-  width: 260px;
+  width: 30%;
+  min-width: 250px;
   padding: 20px;
+  box-sizing: border-box;
   box-shadow: 0 2px 8px #cccccc;
 }
+
+
+/* Timeline years */
 
 .timeline-card h2 {
   color: #173f7a;
   margin-top: 0;
-  font-size: 28px;
+  font-size: 30px;
 }
+
+
+/* Timeline titles */
 
 .timeline-card h3 {
   font-size: 20px;
 }
 
+
+/* Timeline images */
+
 .timeline-card img {
   width: 100%;
-  height: 130px;
+  height: 150px;
   object-fit: cover;
 }
 
 
-/* Three columns */
+/* Three column section */
 
 .sustainability-card {
   background-color: white;
@@ -80,13 +94,14 @@ header p {
   border: 1px solid #dddddd;
 }
 
-.sustainability-card h3 {
-  margin-top: 10px;
-}
+
+/* Icons */
 
 .sustainability-icon {
   font-size: 38px;
-  color: #222;
+  color: #0071c5;
+  display: block;
+  margin-bottom: 15px;
 }
 
 
@@ -108,13 +123,14 @@ header p {
 }
 
 .newsletter h2 {
-  color: #222;
+  color: #173f7a;
 }
 
 .newsletter form {
   display: flex;
   justify-content: center;
-  gap: 20px;
+  align-items: center;
+  gap: 15px;
   flex-wrap: wrap;
   margin-top: 20px;
 }
@@ -128,6 +144,7 @@ header p {
   width: 350px;
   padding: 14px;
   border: 1px solid #cccccc;
+  box-sizing: border-box;
 }
 
 .newsletter button {
@@ -167,7 +184,18 @@ input:focus {
 }
 
 
-/* Mobile */
+/* Tablet */
+
+@media (max-width: 900px) {
+
+  .timeline-card {
+    width: 45%;
+  }
+
+}
+
+
+/* Phone */
 
 @media (max-width: 600px) {
 
